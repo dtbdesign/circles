@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import ApplicationForm from '../components/ApplicationForm';
+
+const LandingPage: React.FC = () => {
+  const [formVisible, setFormVisible] = useState(false);
+
+  const handleApplyClick = () => setFormVisible(true);
+  const handleCloseForm = () => setFormVisible(false);
+
+  return (
+    <div className="relative font-sans bg-black min-h-screen">
+      <Header />
+      <main>
+        <Hero onApplyClick={handleApplyClick} />
+      </main>
+      <ApplicationForm visible={formVisible} onClose={handleCloseForm} />
+    </div>
+  );
+};
+
+export default LandingPage;
