@@ -10,7 +10,7 @@ const LandingPage: React.FC = () => {
   const handleCloseForm = () => setFormVisible(false);
 
   return (
-    <div className="relative font-sans bg-black min-h-screen">
+    <div className="relative font-sans bg-black min-h-screen overflow-x-hidden">
       <Header />
       <main>
         <Hero onApplyClick={handleApplyClick} />

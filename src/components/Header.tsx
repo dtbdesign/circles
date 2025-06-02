@@ -7,7 +7,7 @@ const Header: React.FC = () => {
         <img
           src="/logo/circles.svg"
           alt="circles logo"
-          className="h-4 md:h-6 max-w-xs object-contain"
+          className="h-6 md:h-9 max-w-xs object-contain"
           style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.3))' }}
         />
       </div>

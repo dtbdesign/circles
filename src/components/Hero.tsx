@@ -10,10 +10,10 @@ const Hero: React.FC<HeroProps> = ({ onApplyClick }) => {
   return (
     <section className="w-full min-h-[80vh] flex flex-col items-center justify-start pt-8 pb-0 bg-black text-white relative">
       <div className="w-full flex flex-col items-center px-2">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-center mb-4 max-w-5xl">
+        <h1 className="text-xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight text-center mb-4 max-w-5xl">
           How I Scaled to 10,000 Community Members and 5-Figure Monthly Revenue with a Small Audience and No Paid Ads
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-slate-300 text-center mb-8 whitespace-nowrap">
+        <p className="text-base sm:text-lg md:text-xl text-slate-300 text-center mb-8 max-w-xs sm:max-w-2xl mx-auto">
           I help creators, and entreprenuers turn their audience into paid online communities
         </p>
         <div className="bg-[#ececff] rounded-lg flex items-center justify-center mb-8 overflow-hidden w-full max-w-[750px] aspect-[16/9]">
