@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import ApplicationForm from '../components/ApplicationForm';
-import { Analytics } from '@vercel/analytics/next';
 
 const LandingPage: React.FC = () => {
-  const [formVisible, setFormVisible] = React.useState(false);
+  const [formVisible, setFormVisible] = useState(false);
 
   const handleApplyClick = () => setFormVisible(true);
   const handleCloseForm = () => setFormVisible(false);
@@ -17,7 +16,6 @@ const LandingPage: React.FC = () => {
         <Hero onApplyClick={handleApplyClick} />
       </main>
       <ApplicationForm visible={formVisible} onClose={handleCloseForm} />
-      <Analytics />
     </div>
   );
 };
